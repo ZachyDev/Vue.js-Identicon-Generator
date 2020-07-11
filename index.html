@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js Identicon Generator</title>
+    <!-- css external stylesheets -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Vue CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- jdenticon library CDN -->
+    <script src="https://cdn.rawgit.com/dmester/jdenticon/5bbdf8cb/dist/jdenticon.min.js"></script>
+</head>
+<body>
+    <div id="app">
+    <!--  input from user  -->
+        <div id="input">
+        <span>Input:</span>
+        <input type="text" @input="userInput"/>
+        </div>
+        <!-- output -->
+        <div id="output">
+        <span>Output:</span>
+        <div v-html="identiconGenerator"></div>
+        </div>
+    </div>
+
+        <!-- external scripts -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>

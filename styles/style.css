@@ -1,0 +1,40 @@
+body{
+    padding:0;
+    background:#ddd;
+  }
+  .app{
+    width:50vw;
+    height:50vh;
+    background:#bbb;
+    position:absolute;
+    left:200px;
+    color:#222;
+    font-family:arial;
+  }
+  #input{
+    position:absolute;
+    left:200px;
+    top:50px;
+  }
+  #input input[type="text"] {
+    padding:9px;
+    width:200px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+  }
+  #input span{
+    position:absolute;
+    top:-30px;
+    font-size:20px;
+  }
+  #output{
+    position:absolute;
+    left:200px;
+    top:120px;
+  }
+  #output span{
+    position:absolute;
+    top:-20px;
+    font-size:20px;
+  }
